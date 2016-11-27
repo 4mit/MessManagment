@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <meta>
+    <link href="assets/icons-64/home-2.png" rel="icon">
+    <title>NITC MESS</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/external.css" rel="stylesheet">
+    <script src="js/prefixfree.min.js"></script> 
+    <script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/nicescroll.js"></script>	
+  
+  <script>
+	$(document).ready(function(){
+		function s() { 
+    		$('html').niceScroll();
+  		}
+
+  		s();
+  		
+		$("a[href*='#']:not([href='#'])").click(function(){
+			var target = $(this.hash);
+			target = target.length ? target : $('[name]=' + this.hash.substr(1) + ']');
+			if(target.length)
+			{
+				$('html,body').animate({
+					scrollTop : target.offset().top
+				},1000);
+			return false; 
+			}
+		});
+	});
+	
+  </script>
+  <style>
+ 
+  </style>
+  </head>
+  <body>
+  <div id="loading"></div>
+<header ><img src="assets/NITC.jpg" height="300" class="img " alt="top image" ></header>
+
+<div id="row overlap"><div id="top"></div>
+<nav class="main-nav navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">NITC</a>
+    </div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		 <ul class="nav navbar-nav">
+			<li><a href="index.html"><span class="glyphicon glyphicon-home">&ensp;</span>Home</a></li>
+            <li><a href="index.html#about-nitc"><span class="glyphicon glyphicon-question-sign">&ensp;</span>About NITC</a></li>
+            			
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-pencil">&ensp;</span>feedback<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="user.php?feedback"><span class="glyphicon glyphicon-ok-circle">&ensp;</span>Feedback</a></li>
+				<li><a href="user.php?suggestion"><span class="glyphicon glyphicon-hand-down">&ensp;</span>Suggestion</a></li>
+				<li><a href="user.php?complaint"><span class="glyphicon glyphicon-thumbs-down">&ensp;</span>Complaint</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-thumbs-up">&ensp;</span>Like</a></li>
+				
+			  </ul>
+			</li>				
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-home">&ensp;</span>Mess <span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Mess A</a></li>
+				<li><a href="#">Mess B</a></li>
+				<li><a href="#">Mess C</a></li>
+				<li><a href="#">Mess D</a></li>
+				<li><a href="#">Mess E</a></li>
+			  </ul>
+			</li>
+
+			<li class="dropdown">
+			  <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-log-in">&ensp;</span>Log In<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="index.html#login-register"><span class="glyphicon glyphicon-log-in">&ensp;</span>Student Login</a></li>
+				<li><a href="index.html#login-register"><span class="glyphicon glyphicon-log-in">&ensp;</span>Contractor Login</a></li>
+			  </ul>
+			</li>
+            <li><a href="#footer"><span class="glyphicon glyphicon-info-sign">&ensp;</span>About Us</a></li>	
+		  </ul>
+	</div>	
+  </div>
+</nav>
+
+
+
+<div class="main"></div>
+<div class="row" style="width:103%;">
+	<h3 id="text" align="center"></h3>
+</div>
+
+<div class="row">
+	<div class="col col-sm-3">
+		<div class="panel panel panel-primary">
+			  <div class="panel-heading"><h4 align="center">Quick Navigation</h4></div>
+			  <div class="panel-body"> 
+				<ul class="list-group">
+				<li class="list-group-item"><span class="glyphicon glyphicon-home">&nbsp;</span><a href="http://nitc.ac.in">Nitc Home page</a></li>
+				<li class="list-group-item"><span class="glyphicon glyphicon-lock">&nbsp;</span><a href="">Nitc Library</a></li>
+				<li class="list-group-item"><span class="glyphicon glyphicon-globe">&nbsp;</span><a href="">Eduserver</a></li>
+				<li class="list-group-item"><span class="glyphicon glyphicon-user">&nbsp;</span><a href="#">Admin Panel</a></li>
+				<li class="list-group-item"><span class="glyphicon glyphicon-ok">&nbsp;</span><a href="#">Check Payment Status</a></li>
+               	<li class="list-group-item"><span class="glyphicon glyphicon-education">&nbsp;</span><a href="#">Student's Profile </a></li>
+			   </ul>
+			  </div>
+			   
+		</div>
+		<div class="panel panel-success">
+			  <div class="panel-heading"><h4 align="center">Contact</h4></div>
+			  <div class="panel-body"> 
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#cwarder">Contact Cheif Warden</a></li>
+					<li class="list-group-item"><a href="index.html#hofficewarder">Hostel Office Wardern</a></li>
+					<li class="list-group-item"><a href="index.html#footer">Contact Webmaster</a></li>
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">list item</li>
+				  </ul>
+			  
+			  </div>
+				  
+		</div>
+		
+		<div class="panel panel-info">
+			  <div class="panel-heading">NOTIFICATION</div>
+			  <div class="panel-body">
+				<ul class="list-group">
+					<li class="list-group-item"><a href="files/holidays.pdf">Check Holidays</a></li>
+					<li class="list-group-item"><a href="files/fee_hostel.pdf">NITC hostel Fee Structure 2016</a></li>
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">Plist item</li>
+					<li class="list-group-item">list item</li>
+				  </ul>
+
+			  </div>
+				  
+		</div>
+		
+		<div class="panel panel-warning">
+			  <div class="panel-heading">NOTIFICATION</div>
+			  <div class="panel-body"><p>JUST A BODY </p> 
+				<ul class="list-group">
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">list item</li>
+					<li class="list-group-item">list item</li>
+				  </ul>
+			  
+			  
+			  </div>
+				  
+		</div>
+		
+						
+	</div>
+	<div class="col col-sm-6">
+		
+		<div class="row">	
+		<div class="row">
+
+			<div class="col col-sm-12 col-lg-12 col-xl-12 col-md-12" >
+			<div id="login-register">
+				<center><br/>
+					<h3>Contractor login</h3>
+					<form class="form-horizontal">
+						  <div class="form-group">
+							<label for="inputEmail3" class="col-sm-3 control-label">user name *</label>
+							<div class="col-sm-8">
+							  <input type="text" class="form-control" id="inputEmail3" placeholder="User Name " required>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputPassword3" class="col-sm-3 control-label">Password *</label>
+							<div class="col-sm-8">
+							  <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+							</div>
+						  </div>
+						  
+						  	<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+								  <select id="user_type" name="user_type">
+								  	<option>Student</option>
+								  	<option>Contractor</option>	
+								  </select>
+								</div>
+
+						  </div>
+						  <div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+							  <button type="submit" class="btn btn-default " name="login" onClick="return check();">Login</button>
+							</div>
+						  </div>
+						  <br/>
+					</form>
+					
+				</center>
+			 </div>	
+			</div>	
+		</div>	<!-- form part ends here -->
+			
+	</div>
+	
+	</div> <!-- left right ans right panel ends here -->
+</div> <!-- overlap class ends here -->  
+<script type="text/javascript">
+function check(){
+//alert("function is working ");
+'use strict';
+	var un = document.getElementById('inputEmail3').value;
+	var pw = document.getElementById('inputPassword3').value;
+	if(/[a-zA-Z]{3,20}/.test(un)){
+
+		if(/[a-zA-Z0-9#@$!%^*]{5,20}/.test(pw)){
+
+			return true;
+
+		}else{
+
+			alert("Invalid password character combination does'nt match ");
+			return false;
+		}
+	}else{
+			alert("invald characters are interess or length mismatched  ");
+			return false;
+	}
+
+
+}
+</script>
+    <script src="js/sticky-index.js"></script>
+	<script src="js/bootstrap.js"></script>
+  </body>
+</html>

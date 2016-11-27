@@ -1,0 +1,41 @@
+<div class="loader">
+</div>
+<div class="loader2"></div>
+<div class="container">
+<div class="panel panel-info">
+  <div class="panel-heading">
+      Hello   
+  </div>
+  <div class="panel-body">
+  This is a body 
+  </div>
+</div>
+</div>
+
+
+--------------------
+.panel:hover{
+  border:1px solid black;
+  transition:.5s;
+  box-shadow:0px 10px 15px 0px rgba(0,0,0,0.75);
+}
+.loader{
+  margin:20px;
+  height:40px;width:40px;
+  border:2px solid black;animation:round 1s linear infinite;
+ }
+ .loader2{
+  height:40px;width:40px; margin-left:20px;margin-top:-60px;
+  border:2px solid red;animation:round2 1s linear infinite;
+  position:relative;
+}
+@keyframes round{
+  0%{transform:rotate(0deg);}
+  
+  100%{transform:rotate(360deg);}
+}
+@keyframes round2{
+  0%{transform:rotate(360deg);}
+ 
+  100%{transform:rotate(0deg);}
+}

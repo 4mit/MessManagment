@@ -1,0 +1,277 @@
+body{
+	background-image:url(../assets/paralex1.png);
+	background-attachment:fixed;
+	background-size:cover;
+}
+@font-face {
+    font-family: fonta;
+    src: url(../fonts/Frijole-Regular.ttf);
+}
+@font-face {
+    font-family: fontb;
+    src: url(../fonts/4thandInches.ttf);
+}
+@font-face {
+    font-family: fontc;
+    src: url(../fonts/BITSUMIS.TTF);
+}
+@font-face {
+    font-family: carbon;
+    src: url(../fonts/carbon.ttf);
+}
+@font-face {
+    font-family: fonte;
+    src: url(../fonts/Choktoff.otf);
+}
+@font-face {
+    font-family: font_Sandwich;
+    src: url(../fonts/Sandwich.ttf);
+}
+
+@font-face {
+    font-family: font_Titania;
+    src: url(../fonts/Titania-Regular.ttf);
+}
+@font-face {
+    font-family: font_venus;
+    src: url(../fonts/venusrisingrg.ttf);
+}
+.list-group-item{font-family:font_Titania;}
+.nav >li{font-family:carbon;}
+.panel-heading{font-family:font_venus;font-size:30px;}
+/*    index.html */
+
+#text{font-family: fonta;
+	height: 100px;
+	color:#FF3399;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding-top: 250px;
+}
+.main-nav,
+.main-nav {
+  transition:1s;	
+  background: #000000;
+  height: 80px;
+  z-index: 150;
+  width: 100%;
+  margin-bottom: -80px;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+header {
+  	height:260px;
+ 	padding-top: 0px;
+ 	background-image: url('../assets/NITC.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index:-9999;
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.main h1{margin-top:-20px;}
+div.main {
+  padding-top:10px;
+  background: white;
+  padding: 55px 0px 50px 0px;
+  margin-right:50px;
+  width: 100%;
+}
+.row{
+	background: #f2f2e8;
+}
+.col-sm-3{
+	Bborder:2px solid brown;
+} /* remove after done */ 
+.col-sm-6{
+	border:2px solid brown;
+	box-shadow: inset 10px 10px 15px solid black;
+}/* remove after done */ 
+
+.mess-list{
+	padding-left:0%;
+	padding-right:0%;
+	}
+.mess{
+	padding:0px; 
+	margin-left:7%;
+	margin-bottom:8px;
+	overflow:hidden;
+	height:200px;
+	width:200px;
+	border:3px solid green;
+	-webkit-border:3px solid green;
+	transition: 1s;
+	border-radius:100% !important;
+	
+	
+}
+.mess:hover{
+	transform:rotate(360deg);
+	border-bottom:5px solid #F01A1E;
+	border-top:5px solid #F70CBB;
+	border-left:5px solid green;
+	border-right:5px solid green;
+	box-shadow: 0px 0px 15px black;
+}
+/* mess a*/	
+#mess_name1{			
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/a-mess.jpg);
+	background-size:cover;
+	margin:0px;
+	padding:0px;	
+}
+	
+#mess_name1 >a{	
+	display:none;
+	text-align:center;
+	transition:1s;
+	}
+.mess:hover > #mess_name1 a{
+	
+	padding-top:-20px;
+	margin-top:-20px;
+	margin-left:7px;
+	display:block;
+	background-color:#F1F1F1;
+	padding-left:-20px;}
+
+/* mess b*/	
+#mess_name2{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/b-mess.jpg);
+	background-size:cover;	
+}
+
+/* mess c*/
+#mess_name3{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/c-mess.jpg);
+	background-size:cover;	
+}
+
+/* mess d*/
+#mess_name4{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/d-mess.jpg);
+	background-size:cover;	
+}
+
+/* mess e*/
+#mess_name5{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/e-mess.jpg);
+	background-size:cover;	
+}
+
+/* mess f*/
+#mess_name6{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/f-mess.jpg);
+	background-size:cover;	
+}
+
+/* mess g*/
+#mess_name7{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/g-mess.jpg);	
+	background-size:cover;
+
+}
+		
+
+/* mess pg 1*/
+#mess_name8{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/pg-1.jpg);
+	background-size:cover;	
+}
+
+/* mess pg 2*/
+#mess_name9{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/pg2.jpg);
+	background-size:cover;	
+}
+
+/* mess mba 2*/
+#mess_name9{	
+	height:200px;
+	width:200px;
+	background-image:url(../assets/mess_images/mba.jpg);
+	background-size:cover;	
+}
+	
+
+#overlap{background-color:black;
+	padding-bottom:0px;
+	height:170px;
+}
+.dropdown >ul >li >a{
+	background-color: #FF3399;
+	transition: .4s;
+	font-family: carbon;
+}
+.dropdown >ul >li >a:hover{background-color: orange;font-size: 20px;}
+.dropdown >ul >li {background-color: #FF3399;
+	border:2px solid green;
+	font-family:fonta;
+}
+#login-register{
+	transition:1s;
+}
+#login-register:hover{box-shadow: 0px 0px 15px black;
+border-radius:10px 15px 10px 15px;
+}
+
+/*     */
+
+
+.main-nav{
+	background-color:#EF15AA;
+	border-radius: 0;
+	border: 2px solid black;
+	
+}
+.main-nav li a{color:black;transition: 1s;line-height: 40px;font-size:15px;font-face:bold;}
+.main-nav  a{color:black;transition: 1s;line-height: 40px;}
+.navbar-header a{color: black !important; }
+
+
+div.foot{padding-left:15%;padding-right:15%;text-align:center; height:60px;}
+div.foot > a  > img{
+	height:40px;
+	width:40px;
+	border:4px solid green;
+	transition:1s;
+	}
+div.foot > a > img:hover{
+	transform:scale(1);
+	border:2px solid red;
+	transform:rotate(360deg);
+	
+}
+#text{margin-left:150px;}
+
+div.foot > a {color:white;}

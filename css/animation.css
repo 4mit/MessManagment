@@ -1,0 +1,37 @@
+div#circle{
+	 margin-top:10px;
+	 margin-left:0px;
+	 height:60px;
+	 width:60px;
+	 animation:round 1s linear infinite;
+	 border-top:4px solid #02F8FC;
+	 border-bottom:4px solid #02F8FC;
+	 border-left:4px solid #02F8FC;
+	 border-right:4px solid #02F8FC;
+	 border-radius:20%;
+	 z-index:999;
+ }
+ div#rev_circle{
+	border-radius:20%;
+	margin-top:-60px;
+	margin-left:0px;
+	animation:rev 1s linear infinite;
+	border-top:4px solid #1FEF23;
+	border-bottom:4px solid #1FEF23;
+	border-left:4px solid #1FEF23;
+	border-right:4px solid #1FEF23;
+	height:60px;
+	width:60px;
+	z-index:78;
+	 
+	 
+ }
+ @keyframes round{
+	 0%{ transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+ }
+	 
+@keyframes rev{
+	 0%{transform:rotate(360deg); }
+	100%{transform:rotate(0deg); }
+}
