@@ -1,2 +1,3 @@
 "# MessManagment" 
 This Project is a  simple demostratin of how to manage mess of any institute online and maintains students bill and their dues ...
+Simply Download all the files and paste in into your localhost
